@@ -8,6 +8,11 @@ plugins:
   - serverless-iam-roles-per-function
   - serverless-plugin-tracing
 
+custom:  
+  webpack:    
+    webpackConfig: ./webpack.config.js    
+    includeModules: true
+
 provider:
   name: aws
   runtime: nodejs12.x
